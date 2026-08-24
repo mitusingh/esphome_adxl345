@@ -1,2 +1,2 @@
-# esphome_adxl345
-ESPHome config example for reading ADXL345 accelerometer data on ESP32 (ESP-IDF framework) via a lambda-initialized external ESP-IDF component (espp/adxl345), since ESPHome has no native ADXL345 support.
+# ESPHome + ADXL345 on ESP-IDF
+ESPHome doesn't ship a native ADXL345 accelerometer component. This repo shows how to read X/Y/Z acceleration data anyway, by pulling in the espp/adxl345 ESP-IDF component via esp32.framework.components and initializing/reading it from a lambda in a template sensor.
